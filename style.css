@@ -1,0 +1,168 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.menu {
+    margin-top: 20px;
+}
+
+.menu button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu button:hover {
+    background-color: #555;
+}
+
+form {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: inline-block;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="submit"], input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.section {
+    display: none;
+} */
+/*ESSAI DEUX*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #174BB0;
+}
+
+.menu {
+    margin-top: 20px;
+}
+
+.menu button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #174BB0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu button:hover {
+    background-color: #555;
+}
+
+form {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: inline-block;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="submit"], input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    background-color: #174BB0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.section, .subsection {
+    display: none;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #333;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #174BB0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #555;
+}
+#display{
+    text-align: center;
+    
+}
