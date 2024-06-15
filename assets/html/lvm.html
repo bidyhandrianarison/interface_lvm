@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion de LVM et SAMBA</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../script.js" defer></script>
+</head>
+<body>
+    <h1>Gestion de LVM et SAMBA</h1>
+    <div class="menu">
+        <button onclick="showSection('pvSection')">Gestion de PV</button>
+        <div>
+            <button onclick="showSection('vgOperation')">Gestion de VG</button>
+            <div id="vgOperation">
+                <button onclick="showSection('vgCreate')">Création de VG</button>
+                <button onclick="showSection('vgSection')">Affichage de VG</button>
+            </div>
+        </div>
+        
+        <button onclick="showSection('lvSection')">Gestion de LV</button>
+        <button onclick="showSection('sambaSection')">Gestion de SAMBA</button>
+    </div>
+
+    <div id="pvSection" class="section" style="display:none;">
+        <h2>Créer un Physical Volume (PV)</h2>
+        <form action="../php/pvcreate.php" method="post">
+            <label for="pvname">Nom du PV (ex: /dev/sdX) :</label>
+            <input type="text" id="pvname" name="pvname" required><br><br>
+            <input type="submit" value="Créer PV">
+        </form>
+        <h2>Afficher les Physical Volumes (PV)</h2>
+        <form action="../php/pvdisplay.php" method="post">
+            <input type="submit" value="Afficher PVs">
+        </form>
+    </div>
+
+    <div id="vgSection" class="section" style="display:none;">
+        <h2>Créer un Volume Group (VG)</h2>
+        <form id="vgCreate" action="../php/vgcreate.php" method="post">
+            <label for="vgname">Nom du VG :</label>
+            <input type="text" id="vgname" name="vgname" required><br><br>
+            <label for="pvs">Liste des PVs (séparés par des espaces) :</label>
+            <input type="text" id="pvs" name="pvs" required><br><br>
+            <input type="submit" value="Créer VG">
+        </form>
+        <h2>Afficher les Volume Groups (VG)</h2>
+        <form action="../php/vgdisplay.php" method="post">
+            <input type="submit" value="Afficher VGs">
+        </form>
+        <h2>Étendre un Volume Group (VG)</h2>
+        <form action="../php/vgextend.php" method="post">
+            <label for="vgname">Nom du VG :</label>
+            <input type="text" id="vgname" name="vgname" required><br><br>
+            <label for="pvextend">PV à ajouter :</label>
+            <input type="text" id="pvextend" name="pvextend" required><br><br>
+            <input type="submit" value="Étendre VG">
+        </form>
+        <h2>Réduire un Volume Group (VG)</h2>
+        <form action="../php/vgreduce.php" method="post">
+            <label for="vgname">Nom du VG :</label>
+            <input type="text" id="vgname" name="vgname" required><br><br>
+            <label for="pvreduce">PV à retirer :</label>
+            <input type="text" id="pvreduce" name="pvreduce" required><br><br>
+            <input type="submit" value="Réduire VG">
+        </form>
+    </div>
+
+    <div id="lvSection" class="section" style="display:none;">
+        <h2>Créer un Logical Volume (LV)</h2>
+        <form action="../php/lvcreate.php" method="post">
+            <label for="vgname">Nom du VG :</label>
+            <input type="text" id="vgname" name="vgname" required><br><br>
+            <label for="lvname">Nom du LV :</label>
+            <input type="text" id="lvname" name="lvname" required><br><br>
+            <label for="lvsize">Taille du LV (ex: 10G) :</label>
+            <input type="text" id="lvsize" name="lvsize" required><br><br>
+            <input type="submit" value="Créer LV">
+        </form>
+        <h2>Afficher les Logical Volumes (LV)</h2>
+        <form action="../php/lvdisplay.php" method="post">
+            <input type="submit" value="Afficher LVs">
+        </form>
+        <h2>Supprimer un Logical Volume (LV)</h2>
+        <form action="../php/lvdelete.php" method="post">
+            <label for="vgname">Nom du VG :</label>
+            <input type="text" id="vgname" name="vgname" required><br><br>
+            <label for="lvdelname">Nom du LV à supprimer :</label>
+            <input type="text" id="lvdelname" name="lvdelname" required><br><br>
+            <input type="submit" value="Supprimer LV">
+        </form>
+    </div>
+
+    <div id="sambaSection" class="section" style="display:none;">
+        <h2>Gestion de SAMBA</h2>
+        <form action="../php/samba_action.php" method="post">
+            <label for="sharename">Nom du partage :</label>
+            <input type="text" id="sharename" name="sharename" required><br><br>
+            <label for="sharepath">Chemin du partage :</label>
+            <input type="text" id="sharepath" name="sharepath" required><br><br>
+            <label for="comment">Commentaire :</label>
+            <input type="text" id="comment" name="comment"><br><br>
+            <label for="writable">Écriture :</label>
+            <input type="checkbox" id="writable" name="writable"><br><br>
+            <input type="submit" value="Créer Partage">
+        </form>
+    </div>
+
+</body>
+</html>

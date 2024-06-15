@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.menu {
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.menu h2 {
+    color: #fff;
+}
+
+.menu button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.menu button:hover {
+    background-color: #555;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    min-height: 100vh;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+form {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: inline-block;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+input{
+    outline: none;
+}
+input[type="text"], input[type="submit"], input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.section, .subsection {
+    display: none;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    height: 100vh;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    color: #fff;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.sidebar ul li:last-child {
+    border-bottom: none;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #333;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #555;
+}
+
