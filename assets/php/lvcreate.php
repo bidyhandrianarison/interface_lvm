@@ -6,6 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $lvname = escapeshellarg($_POST["lvname"]);
     $lvsize = escapeshellarg($_POST["lvsize"]);
     
+<<<<<<< HEAD
     $command = "sudo lvcreate -y -L $lvsize -n $lvname $vgname && sudo mkfs.ext4 /dev/$vgname/$lvname && sudo mkdir -p /mnt/$lvname && sudo mount /dev/$vgname/$lvname /mnt/$lvname";
     $output = shell_exec($command);
     echo "<pre>$output</pre>";
@@ -13,3 +14,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 <a href="../../index.php">Retour à la gestion de LVM</a>
+=======
+    $command = "sudo lvcreate -L $lvsize -n $lvname $vgname && sudo mkfs.ext4 /dev/$vgname/$lvname && sudo mkdir /mnt/$lvname && sudo mount /dev/$vgname/$lvname /mnt/$lvname";
+    $output = shell_exec($command);
+    echo "<pre>$output</pre>";
+}
+?>
+<a href="lvm.php">Retour à la gestion de LVM</a>
+>>>>>>> 98124f3e6b99a8b33e1b840f6618822c34a701e5

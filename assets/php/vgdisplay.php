@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Afficher les Volume Groups (VG)</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
     <div class="vgDisplay">
+=======
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+>>>>>>> 98124f3e6b99a8b33e1b840f6618822c34a701e5
     <h1>Afficher les Volume Groups (VG)</h1>
     <?php
     $command = "sudo vgdisplay --columns --separator '|' --noheadings -o vg_name,vg_size,vg_free";
@@ -32,8 +38,12 @@
             <?php endforeach; ?>
         </tbody>
     </table>
+<<<<<<< HEAD
     <a href="../../index.php">Retour à la gestion de LVM</a>
 
     </div>    
+=======
+    <a href="../../index.html">Retour à la gestion de LVM</a>
+>>>>>>> 98124f3e6b99a8b33e1b840f6618822c34a701e5
 </body>
 </html>
