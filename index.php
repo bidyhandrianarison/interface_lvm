@@ -48,6 +48,7 @@
             <button onclick="showSubSection('vgDisplay')">Afficher les VG</button>
             <button onclick="showSubSection('vgExtend')">Étendre un VG</button>
             <button onclick="showSubSection('vgReduce')">Réduire un VG</button>
+            <button onclick="showSubSection('vgRemove')">Supprimer un VG</button>
         </div>
         <div id="vgCreate" class="subsection" style="display:none;">
             <h3>Créer un Volume Group (VG)</h3>
@@ -83,6 +84,14 @@
                 <label for="pvreduce">PV à retirer :</label>
                 <input type="text" id="pvreduce" name="pvreduce" required><br><br>
                 <input type="submit" value="Réduire VG">
+            </form>
+        </div>
+        <div id="vgRemove" class="subsection" style="display:none;">
+            <h3>Supprimer un Volume Group (VG)</h3>
+            <form action="assets/php/vgremove.php" method="post">
+                <label for="vgname">Nom du VG :</label>
+                <input type="text" id="vgname" name="vgname" required><br><br>
+                <input type="submit" value="Supprimer VG">
             </form>
         </div>
     </div>

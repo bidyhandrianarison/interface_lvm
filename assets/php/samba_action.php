@@ -13,7 +13,6 @@
         $sharepath = escapeshellarg($_POST["sharepath"]);
         $comment = escapeshellarg($_POST["comment"]);
         $writable = isset($_POST["writable"]) ? "yes" : "no";
-        
         $smbconf = "
 [$sharename]
     path = $sharepath
