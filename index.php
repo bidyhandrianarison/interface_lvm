@@ -24,6 +24,7 @@
         <div class="submenu">
             <button onclick="showSubSection('pvCreate')">Créer un PV</button>
             <button onclick="showSubSection('pvDisplay')">Afficher les PV</button>
+            <button onclick="showSubSection('pvRemove')">Supprimer un PV</button>
         </div>
         <div id="pvCreate" class="subsection" style="display:none;">
             <h3>Créer un Physical Volume (PV)</h3>
@@ -37,6 +38,14 @@
             <h3>Afficher les Physical Volumes (PV)</h3>
             <form action="assets/php/pvdisplay.php" method="post">
                 <input type="submit" value="Afficher PVs">
+            </form>
+        </div>
+        <div id="pvRemove" class="subsection" style="display:none;">
+            <h3>Supprimer un Physical Volume (PV)</h3>
+            <form action="assets/php/pvremove.php" method="post">
+                <label for="pvname">Nom du PV (ex: /dev/sdX) :</label>
+                <input type="text" id="pvname" name="pvname" required><br><br>
+                <input type="submit" value="Supprimer PV">
             </form>
         </div>
     </div>
@@ -71,8 +80,8 @@
             <form action="assets/php/vgextend.php" method="post">
                 <label for="vgname">Nom du VG :</label>
                 <input type="text" id="vgname" name="vgname" required><br><br>
-                <label for="pvextend">PV à ajouter :</label>
-                <input type="text" id="pvextend" name="pvextend" required><br><br>
+                <label for="pvextend" >PV à ajouter :</label>
+                <input type="text" id="pvextend" name="pvs" required><br><br>
                 <input type="submit" value="Étendre VG">
             </form>
         </div>

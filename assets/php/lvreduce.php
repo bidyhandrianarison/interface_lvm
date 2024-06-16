@@ -1,5 +1,7 @@
 <link rel="stylesheet" href="../../style.css">
-<?php
+<body>
+    <div>
+    <?php
 // Récupérer les données du formulaire
 $vgname = $_POST['vgname'];
 $lvname = $_POST['lvreduce'];
@@ -11,3 +13,6 @@ $output = shell_exec("sudo umount /mnt/$lvname && sudo fsck -f /dev/$vgname/$lvn
 // Afficher le résultat de l'exécution
 echo "<pre>$output</pre>";
 ?>
+    </div>
+    <a href="../../index.php   ">Retour à la gestion de LVM</a>
+</body>

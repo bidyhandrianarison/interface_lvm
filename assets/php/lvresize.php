@@ -1,4 +1,6 @@
 <link rel="stylesheet" href="../../style.css">
+<body>
+<div>
 <?php
 // Récupérer les données du formulaire
 $vgname = $_POST['vgname'];
@@ -11,3 +13,6 @@ $output = shell_exec("lvextend -L+$lvresize_amount /dev/$vgname/$lvname && sudo 
 // Afficher le résultat de l'exécution
 echo "<pre>$output</pre>";
 ?>
+</div>
+<a href="../../index.php   ">Retour à la gestion de LVM</a>
+</body>

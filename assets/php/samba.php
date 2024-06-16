@@ -18,6 +18,6 @@
         <input type="checkbox" id="writable" name="writable"><br><br>
         <input type="submit" value="Créer Partage">
     </form>
-    <div><a href="../../index.php">Retour à l'accueil</a></div>
+    <a href="../../index.php">Retour à l'accueil</a>
 </body>
 </html>
