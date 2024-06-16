@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Gestion de SAMBA</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
     <h1>Gestion de SAMBA</h1>
@@ -18,6 +18,6 @@
         <input type="checkbox" id="writable" name="writable"><br><br>
         <input type="submit" value="Créer Partage">
     </form>
-    <div><a href="index.html">Retour à l'accueil</a></div>
+    <div><a href="../../index.php">Retour à l'accueil</a></div>
 </body>
 </html>

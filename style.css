@@ -1,13 +1,8 @@
-<<<<<<< HEAD
 body {
-=======
-/* body {
->>>>>>> 98124f3e6b99a8b33e1b840f6618822c34a701e5
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -38,38 +33,17 @@ body {
     margin: 10px 0;
     padding: 10px 20px;
     background-color: #444;
-=======
-    text-align: center;
-}
-
-h1, h2 {
-    color: #333;
-}
-
-.menu {
-    margin-top: 20px;
-}
-
-.menu button {
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #333;
->>>>>>> 98124f3e6b99a8b33e1b840f6618822c34a701e5
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-<<<<<<< HEAD
     text-align: left;
-=======
->>>>>>> 98124f3e6b99a8b33e1b840f6618822c34a701e5
 }
 
 .menu button:hover {
     background-color: #555;
 }
 
-<<<<<<< HEAD
 .content {
     flex-grow: 1;
     padding: 20px;
@@ -85,8 +59,6 @@ h1, h2, h3 {
     color: #333;
 }
 
-=======
->>>>>>> 98124f3e6b99a8b33e1b840f6618822c34a701e5
 form {
     background-color: #fff;
     margin: 20px auto;
@@ -100,13 +72,9 @@ label {
     display: block;
     margin-top: 10px;
 }
-<<<<<<< HEAD
 input{
     outline: none;
 }
-=======
-
->>>>>>> 98124f3e6b99a8b33e1b840f6618822c34a701e5
 input[type="text"], input[type="submit"], input[type="checkbox"] {
     margin-top: 10px;
 }
@@ -124,79 +92,10 @@ input[type="submit"]:hover {
     background-color: #555;
 }
 
-<<<<<<< HEAD
-=======
-.section {
-    display: none;
-} */
-/*ESSAI DEUX*/
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-h1, h2, h3 {
-    color: #174BB0;
-}
-
-.menu {
-    margin-top: 20px;
-}
-
-.menu button {
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #174BB0;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.menu button:hover {
-    background-color: #555;
-}
-
-form {
-    background-color: #fff;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    display: inline-block;
-}
-
-label {
-    display: block;
-    margin-top: 10px;
-}
-
-input[type="text"], input[type="submit"], input[type="checkbox"] {
-    margin-top: 10px;
-}
-
-input[type="submit"] {
-    background-color: #174BB0;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #555;
-}
-
->>>>>>> 98124f3e6b99a8b33e1b840f6618822c34a701e5
 .section, .subsection {
     display: none;
 }
 
-<<<<<<< HEAD
 .sidebar {
     width: 250px;
     background-color: #333;
@@ -225,8 +124,6 @@ input[type="submit"]:hover {
     border-bottom: none;
 }
 
-=======
->>>>>>> 98124f3e6b99a8b33e1b840f6618822c34a701e5
 table {
     margin: 20px auto;
     border-collapse: collapse;
@@ -252,11 +149,7 @@ a {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-<<<<<<< HEAD
     background-color: #333;
-=======
-    background-color: #174BB0;
->>>>>>> 98124f3e6b99a8b33e1b840f6618822c34a701e5
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -265,11 +158,4 @@ a {
 a:hover {
     background-color: #555;
 }
-<<<<<<< HEAD
 
-=======
-#display{
-    text-align: center;
-    
-}
->>>>>>> 98124f3e6b99a8b33e1b840f6618822c34a701e5

@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../../style.css">
 <?php
 // Récupérer les données du formulaire
 $vgname = $_POST['vgname'];

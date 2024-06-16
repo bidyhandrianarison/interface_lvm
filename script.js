@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 document.addEventListener('DOMContentLoaded', function() {
     fetch('assets/php/get_disk.php')
         .then(response => response.json())
@@ -21,8 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
 });
-=======
->>>>>>> 98124f3e6b99a8b33e1b840f6618822c34a701e5
 
 function showSection(sectionId) {
     const sections = document.querySelectorAll('.section');
